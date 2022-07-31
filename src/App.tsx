@@ -1,10 +1,11 @@
-import React from 'react';
+import { NavBar, TotalSpo } from './components';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>Wallet app</h1>
+      <NavBar />
+      <TotalSpo />
     </div>
   );
 }
