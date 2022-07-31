@@ -6,9 +6,9 @@ import { BsFillPeopleFill, BsRainbow } from "react-icons/bs";
 import { RiQuestionFill } from "react-icons/ri";
 import { TbSettings } from "react-icons/tb";
 import ThumbImg from "../../assets/thumbImg.png";
+// import { TheBackground } from "./styles";
 
 
-// import { TheBackground } from "./styles"
 import * as S from "./styles";
 
 export function NavBar() {

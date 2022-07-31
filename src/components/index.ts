@@ -1,2 +1,2 @@
-export * from './navBar/NavBar';
+export * from './sideBar/SideBar';
 export * from './totalSpo/TotalSpo';

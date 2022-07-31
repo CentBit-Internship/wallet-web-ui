@@ -1,8 +1,15 @@
 import React from 'react'
+import { Container } from '../sideBar/styles';
+
+
+import * as S from "./styles";
+
 
 export function TotalSpo() {
   return (
-    <div>TotalSpo</div>
+    <>
+      <S.TripleT></S.TripleT>
+    </>
   )
 }
 
