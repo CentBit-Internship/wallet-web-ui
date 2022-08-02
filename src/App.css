@@ -44,8 +44,12 @@
   justify-content: space-around;
 }
 
-.earnings, .customers-activity {
+.earnings  {
   width: 300px;
-  height: 400px;
+  height: 450px;
 }
 
+.customers-visibility {
+  width: 300px;
+  height: 300px;
+}

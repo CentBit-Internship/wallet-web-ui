@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import * as S from "./styles";
 
@@ -11,9 +11,22 @@ export type SingleCardProps = {
 }
 
 export function SingleCard({ title, value, titleIcon, valueIcon, backgroundColor}: SingleCardProps) {
+  const [val, setVal] = useState(100);
   const formatValue = (val: number) => {
     return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(val); 
   };
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setVal((val) => {
+        if (val >= Math.floor(value)) {
+          clearInterval(id);
+          return value;
+        }
+        return val + 10;
+      });
+    }, 1);
+  }, []);
 
   return (
     <>
@@ -27,7 +40,7 @@ export function SingleCard({ title, value, titleIcon, valueIcon, backgroundColor
         </S.CardsProperties>
 
         <S.CardsProperties>
-        <S.Amount> {formatValue(value)} </S.Amount>
+        <S.Amount> {formatValue(val)} </S.Amount>
         <S.AmountIconDiv>
             <S.Iconn> {valueIcon} </S.Iconn>
           </S.AmountIconDiv>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { SideBar, Cards } from './components';
 import './App.css';
+import { Earnings } from './components/earnings/Earnings';
 
 function App() {
   return (
@@ -15,8 +16,10 @@ function App() {
             <div className="top-selling visible">Top Selling Products</div>
           </div>
           <div className="right visible">
-            <div className="earnings visible">Earnings</div>
-            <div className="customers-activity visible">Customers visibility</div>
+            <div className="earnings visible">
+              {<Earnings />}
+            </div>
+            <div className="customers-visibility visible">Customers visibility</div>
           </div>
         </div>
       </div>
