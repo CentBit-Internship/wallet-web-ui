@@ -1,4 +1,4 @@
-import { NavBar, TotalSpo } from './components';
+import { NavBar, TotalSpo, SalesAnalytics } from './components';
 import './App.css';
 
 function App() {
@@ -6,6 +6,7 @@ function App() {
     <div className="App">
       <NavBar />
       <TotalSpo />
+      <SalesAnalytics />
     </div>
   );
 }
