@@ -1,23 +1,61 @@
-import React from 'react'
+import React from "react";
 
 import * as S from "./styles";
 
-export type MonthsProps = {
-    title: string;
-    value: string;
-}
 
-export function Months({title, value}: MonthsProps) {
+const allMonths = [
+  {
+    title: "Month",
+  },
+  {
+    title: "Jan",
+  },
+  {
+    title: "Feb",
+  },
+  {
+    title: "Mar",
+  },
+  {
+    title: "Apr",
+  },
+  {
+    title: "May",
+  },
+  {
+    title: "Jun",
+  },
+  {
+    title: "Jul",
+  },
+  {
+    title: "Aug",
+  },
+  {
+    title: "Sep",
+  },
+  {
+    title: "Oct",
+  },
+  {
+    title: "Nov",
+  },
+  {
+    title: "Dec",
+  },
+];
+
+export function Months() {
   return (
-    <div> 
-        <form action="/action_page.php">
-    <S.Month name="cars" id="cars">
-      <option value="volvo">title</option>
-      <option value="saab">value</option>
-      {/* <option value="opel">Feb</option>
-      <option value="audi">Mar</option> */}
-    </S.Month>
-  </form>
-  </div>
-  )
+    <>
+      <form action="">
+        <S.Month name="cars" id="cars">
+          {allMonths.map((item) => 
+            <option key={item.title} value={item.title}>{item.title}
+            </option>
+          )}
+        </S.Month>
+      </form>
+    </>
+  );
 }
