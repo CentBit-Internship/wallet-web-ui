@@ -11,6 +11,7 @@ export const TheBackground = styled.div`
   background: #232323;
   width: 25%;
   height: 1000px;
+
 `;
 
 export const AngelaGreyDiv = styled.div`
