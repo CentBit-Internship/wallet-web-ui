@@ -1,11 +1,28 @@
 import * as CA from './styles'
 
-import React from 'react'
 
-const CustomersActivity = () => {
+type Props = {
+  children: JSX.Element
+};
+
+export const CustomersActivity: React.FC<Props> = ({children}) => {
   return (
-    <div>CustomersActivity</div>
+    <CA.CustomerActivityBackground>
+      <CA.CustomerActivityHeader>
+        <CA.CustomerActivityHeaderTitle>
+          Customers Activity
+        </CA.CustomerActivityHeaderTitle>
+
+        <CA.CustomerActivityHeaderSubtitle>
+          <CA.CustomerActivityDot>.</CA.CustomerActivityDot>
+          <CA.CustomerActivityDot>.</CA.CustomerActivityDot>
+          <CA.CustomerActivityDot>.</CA.CustomerActivityDot>
+        </CA.CustomerActivityHeaderSubtitle>
+      </CA.CustomerActivityHeader>
+
+      {children}
+
+    </CA.CustomerActivityBackground>
   )
 }
 
-export default CustomersActivity

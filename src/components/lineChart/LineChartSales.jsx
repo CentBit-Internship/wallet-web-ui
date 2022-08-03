@@ -52,8 +52,8 @@ export const LineChartSales = () => {
     <div>
       <ResponsiveContainer width="100%" aspect={2.5}>
         <LineChart
-          width={500}
-          height={400}
+          width={100}
+          // height={200}
           data={data}
           margin={{
             top: 5,
@@ -62,11 +62,33 @@ export const LineChartSales = () => {
             bottom: 5,
           }}
         >
-          <Legend verticalAlign="top" height={36} align="right" iconSize={10} iconType="circle"/>
+          <text
+            x={42}
+            y={18}
+            fill="#232323"
+            textAnchor="start"
+            dominantBaseline="central"
+            verticalAnchor="end"
+          >
+            <tspan fontWeight={700} fontSize="18">Sales Analytics</tspan>
+          </text>
+          <Legend
+            verticalAlign="top"
+            height={60}
+            iconSize={8}
+            iconType="circle"
+            align="center"
+          />
           <CartesianGrid strokeDasharray="0" horizontal="true" vertical="" />
-          <XAxis dataKey="name" axisLine={false} tickLine={false} height={20} />
-          <YAxis tickCount={6} axisLine={false} tickLine={false} />
-          <Tooltip contentStyle={{backgroundColor: '#000', color: 'white'}} />
+          <XAxis
+            dataKey="name"
+            axisLine={false}
+            tickLine={false}
+            height={110}
+            fontSize="12"
+          />
+          <YAxis tickCount={6} axisLine={false} tickLine={false} fontSize="12"/>
+          <Tooltip contentStyle={{ backgroundColor: "#000", color: "white" }} />
 
           <Line
             className="line-chart"
