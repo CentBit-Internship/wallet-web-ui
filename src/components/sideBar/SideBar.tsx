@@ -9,11 +9,10 @@ import ThumbImg from "../../assets/thumbImg.png";
 // import { TheBackground } from "./styles";
 import * as S from "./styles";
 
-export function NavBar() {
+export function SideBar() {
   return (
     <>
-      <S.Container>
-        <S.TheBackground>
+        <S.BlackBackground>
           <S.AngelaGreyDiv>
             <S.ThumbImage src={ThumbImg}></S.ThumbImage>
             <S.AngelaGrey>Angela Grey</S.AngelaGrey>
@@ -55,9 +54,7 @@ export function NavBar() {
             <S.LogoutIcon><MdLogout /></S.LogoutIcon>
             <S.Logout>Logout</S.Logout>
           </S.LogoutCon>
-
-        </S.TheBackground>
-      </S.Container>
+        </S.BlackBackground>
     </>
   );
 }
