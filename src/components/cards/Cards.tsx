@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { SingleCard, SingleCardProps } from "../singleCard/SingleCard";
 import { BsCreditCard2Back } from "react-icons/bs";
 import { AiOutlineRise } from "react-icons/ai";

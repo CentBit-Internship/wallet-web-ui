@@ -2,7 +2,7 @@ import React from "react";
 import { FaRegCalendar } from "react-icons/fa";
 import { MdGridView, MdLogout } from "react-icons/md";
 import { IoAnalyticsSharp } from "react-icons/io5";
-import { BsFillPeopleFill, BsRainbow } from "react-icons/bs";
+import { BsFillPeopleFill } from "react-icons/bs";
 import { RiQuestionFill } from "react-icons/ri";
 import { TbSettings } from "react-icons/tb";
 import ThumbImg from "../../assets/thumbImg.png";
@@ -49,7 +49,7 @@ export function SideBar() {
           </S.ListContainer>
 
           <S.Raibowlike>
-            <S.RainbowlikeIcon> <BsRainbow/> </S.RainbowlikeIcon>
+            {/* <S.RainbowlikeIcon> <BsRainbow/> </S.RainbowlikeIcon> */}
           </S.Raibowlike>
 
           <S.LogoutCon>

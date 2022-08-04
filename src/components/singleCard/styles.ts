@@ -1,11 +1,11 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 
 export const Card = styled.div<{backgroundColor: string}>`
 height: 150px;
 width: 250px;
 border-radius: 15px;
-margin-left: 2.5rem;
+margin-left: 2.2rem;
 display: flex;
 flex-direction: column;
 align-items: center;

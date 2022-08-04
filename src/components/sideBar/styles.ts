@@ -8,7 +8,7 @@ export const BlackBackground = styled.div`
 `;
 
 export const AngelaGreyDiv = styled.div`
-  height: 250px;
+  height: 200px;
   width: 100%;
 `;
 
@@ -71,16 +71,16 @@ export const Raibowlike = styled.div`
   align-items: center;
 `;
 
-export const RainbowlikeIcon = styled.i`
-  font-size: 100px;
-  width: 100%;
-  margin-left: 3rem;
-  margin-top: 3rem;
-  color: grey;
-  & svg {
-    transform: rotate(100deg);
-  }
-`;
+// export const RainbowlikeIcon = styled.i`
+//   font-size: 100px;
+//   width: 100%;
+//   margin-left: 3rem;
+//   margin-top: 3rem;
+//   color: grey;
+//   & svg {
+//     transform: rotate(100deg);
+//   }
+// `;
 
 export const LogoutCon = styled.div`
   height: 60px;
