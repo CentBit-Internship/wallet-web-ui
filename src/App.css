@@ -1,0 +1,55 @@
+.App {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.aside {
+  width: calc(100% - 250px);
+  overflow-y: scroll;
+}
+
+.visible {
+  border: solid 1px red;
+}
+
+.header {
+  width: 100%;
+  height: 150px;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  min-height: calc(100% - 200px);
+}
+
+.left {
+  width: calc(100% - 150px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+
+.sales-analytics, .top-selling {
+  width: 100%;
+  height: 300px;
+}
+
+.right {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.earnings  {
+  width: 300px;
+  height: 450px;
+}
+
+.customers-visibility {
+  width: 300px;
+  height: 300px;
+}
