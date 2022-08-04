@@ -1,7 +1,4 @@
 import React from "react";
-import { Months } from "../months/Months";
-import { SalesProfitGrowth } from "../salesPofitGrowth/SalesProfitGrowth";
-
 
 import {
   RadialBarChart,
@@ -10,8 +7,11 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
+import { Select } from "antd";
+
 import * as S from "./styles";
 
+const { Option } = Select;
 
 const data = [
   {
@@ -68,11 +68,11 @@ const style = {
 export function Earnings() {
   return (
     <>
-      <S.EarningsAndMonthsDiv>
+      <S.Title>
         <S.Earning>Earnings</S.Earning>
-        <Months />
-      </S.EarningsAndMonthsDiv>
-      <ResponsiveContainer width="100%" height="80%">
+
+      </S.Title>
+      <ResponsiveContainer width="100%" height="100%">
         <RadialBarChart
           cx="50%"
           cy="50%"
@@ -96,8 +96,6 @@ export function Earnings() {
           />
         </RadialBarChart>
       </ResponsiveContainer>
-
-      <SalesProfitGrowth />
     </>
   );
 }
