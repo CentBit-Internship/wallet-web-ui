@@ -8,5 +8,7 @@ width: 300px;
 display: flex;
 align-items: center;
 justify-content: start;
+// border: solid 1px;
+// margin-bottom: 5rem;
 `;
 

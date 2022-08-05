@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { SingleCard, SingleCardProps } from "../singleCard/SingleCard";
 import { BsCreditCard2Back } from "react-icons/bs";
 import { AiOutlineRise } from "react-icons/ai";
 import { GrUpgrade } from "react-icons/gr";
 import {  GiCardBurn } from "react-icons/gi";
+import { BiTrendingDown } from "react-icons/bi"
 
 import * as S from "./styles";
 
@@ -20,7 +21,7 @@ const totalData: SingleCardProps[] = [
     title: "Total Profit",
     titleIcon: <GrUpgrade />,
     value: 762.10,
-    valueIcon: <AiOutlineRise />,
+    valueIcon: <BiTrendingDown />,
     backgroundColor: "#e3f49a"
   },
   {
@@ -38,6 +39,7 @@ export function Cards() {
       <S.CardsCon>
         {totalData.map((item) => 
         <SingleCard
+          key={item.title}
           title={item.title}
           titleIcon={item.titleIcon}
           value={item.value}
