@@ -37,6 +37,7 @@ export const CustomerActivityDot = styled.div`
     font-size: 20px;
 `
 
+
 export const CustomerActivityContent = styled.div`
     margin-top: 30px;
 `
