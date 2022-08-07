@@ -9,18 +9,14 @@ import {
   SearchField,
   ShareInsight,
   NavHeader,
- 
+
 
 } from "./navbar-styled";
-import { useState } from "react";
+
 
 const OverviewNav = () => {
 
-  const [isOpen, setIsOpen] = useState(false)
 
-  const handleOpen = ()=>{
-    setIsOpen(isOpen)
-  }
   return (
     <header>
       <NavbarContainer>
