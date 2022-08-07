@@ -7,8 +7,6 @@ import ProductList from './components/productList/ProductList';
 function App() {
   return (
     <div className="App">
-      {/* <NavBar />
-      <TotalSpo /> */}
 
       <SideBar />
       <div className="aside">

@@ -2,15 +2,13 @@ import styled from "styled-components";
 import React from 'react';
 
 export const ProductListContainer = styled.div`
-  border-top: 1px solid #ddd;
-  border-left: 1px solid #ddd;
-  border-right: 1px solid #ddd;
+
   width: 814px;
   max-width: 100%;
   margin: 0.7rem auto;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-left: 2.5rem;
-  box-shadow: rgba(0, 0, 0, 0.10) 0px 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 `;
 export const ProductListHeader = styled.h6`
   font-family: "Poppins";
@@ -37,16 +35,21 @@ export const THead = styled.th`
   text-align: left;
   background-color: #fefdfd;
   color: rgb(37, 36, 36);
+
 `;
 
 export const TData = styled.td`
   font-family: "Poppins", sans-serif;
-  padding: 25px 30px 10px;
+  padding: 9px 30px 10px;
   text-align: left;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #f8f8ff;
   font-size: 12px;
   align-items: center;
   justify-content: space-around;
   font-size: 14px;
-  font-weight:600
+  font-weight: 600;
+
+  &:last-child {
+   
+  }
 `;

@@ -22,7 +22,7 @@ const ProductList = () => {
             <THead>Sold</THead>
             <THead>Total Sold</THead>
             <THead>Stock Status</THead>
-            <THead>Action</THead>
+            <THead></THead>
           </tr>
           {Product.map((item) => (
             <>
@@ -54,6 +54,7 @@ const ProductList = () => {
                 </TData>
                 <TData>{item.action}</TData>
               </tr>
+      
             </>
           ))}
         </TBody>
