@@ -8,11 +8,15 @@ import {
   Inputs,
   SearchField,
   ShareInsight,
-  NavHeader
+  NavHeader,
+
 
 } from "./navbar-styled";
 
+
 const OverviewNav = () => {
+
+
   return (
     <header>
       <NavbarContainer>
@@ -21,7 +25,7 @@ const OverviewNav = () => {
           <form>
             <Inputs>
               <SearchField>
-                <SearchInput type="text" placeholder="search" />
+                <SearchInput type="text" placeholder="Search" />
                 <BiSearch
                   style={{
                     position: "absolute",
@@ -30,6 +34,7 @@ const OverviewNav = () => {
                     fontSize: 35,
                     color: " #696969",
                     padding: "0 8px 0 0",
+                    fontWeight: "700",
                   }}
                 />
               </SearchField>
@@ -40,6 +45,7 @@ const OverviewNav = () => {
                   backgroundColor: "#e8e8e8",
                   padding: "10px 15px",
                   zIndex: 1000,
+                  fontWeight: "700",
                 }}
               />
               <ShareInsight type="text" placeholder="Share Insights" />
