@@ -20,7 +20,9 @@ export const CustomersActivity: React.FC<Props> = ({children}) => {
         </CA.CustomerActivityHeaderSubtitle>
       </CA.CustomerActivityHeader>
 
-      {children}
+      <CA.CustomerActivityContent>
+        {children}
+      </CA.CustomerActivityContent>
 
     </CA.CustomerActivityBackground>
   )
