@@ -4,12 +4,11 @@ export const NavbarContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 5px 0.7rem;
+  padding: 1.3rem 0.7rem;
   align-items: center;
-  margin:0 auto;
-
+  margin: auto;
+  flex-wrap:wrap;
   font-family:'Poppins';
-
 
 `;
 export const NavHeader = styled.h2`
@@ -24,7 +23,7 @@ export const NavbarInputs = styled.div`
 `;
 export const SearchInput = styled.input`
   padding: 10px 15px;
-  border-radius: 0.2rem;
+  border-radius: 0.5rem;
   border: 0;
   background-color: #e8e8e8;
   width: 100%;
@@ -47,14 +46,16 @@ export const Inputs = styled.div`
   align-items: center;
 
 `;
+
+;
 export const SearchField = styled.div`
   position: relative;
 `;
 
 export const ShareInsight = styled.input`
-width:30%;
+  width: 30%;
   padding: 10px 10px;
-  border-radius: 0.2rem;
+  border-radius: 0.5rem;
   border: 0;
   background-color: #181818;
 
@@ -66,5 +67,6 @@ width:30%;
     color: #fff;
     padding: 5px;
     text-align: center;
+    font-weight: 500;
   }
 `;
